@@ -1,0 +1,105 @@
+@import url("./root.css");
+
+/* ======================================================== MARGIN ========================================================== */
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-14 {
+  margin-top: 14px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-36 {
+  margin-top: 36px;
+}
+
+.mt-84 {
+  margin-top: 84px;
+}
+
+/* ======================================================== PADDING ========================================================== */
+
+.pl-12 {
+  padding-left: 12px !important;
+}
+
+.pr-12 {
+  padding-right: 12px !important;
+}
+
+/* ======================================================== COMMON THINGS =================================================== */
+
+.common-btn {
+  outline: none;
+  border: none;
+}
+
+/* ======================================================== SERVICES ======================================================== */
+
+.services-bg {
+  background-image: url(../images/png/services-bg.png);
+  border-left: 1px solid var(--service-card-brdr);
+  border-right: 1px solid var(--service-card-brdr);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 280px;
+}
+
+.common-services-card {
+  padding: 40px;
+  border-bottom: 1px solid var(--service-card-brdr);
+  border-top: 1px solid var(--service-card-brdr);
+}
+
+.service-card1 {
+  border-left: 1px solid var(--service-card-brdr);
+}
+
+.service-card2 {
+  border-left: 1px solid var(--service-card-brdr);
+  border-right: 1px solid var(--service-card-brdr);
+}
+
+.service-card3 {
+  border-right: 1px solid var(--service-card-brdr);
+}
+
+.service-common-svg {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  background: linear-gradient(
+    229.29deg,
+    rgba(158, 255, 0, 0.2) -68.25%,
+    rgba(158, 255, 0, 0) 32.16%
+  );
+}
+
+.service-common-svg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #2e2e2e 0%, rgba(46, 46, 46, 0) 100%);
+  -webkit-mask: linear-gradient(var(--white-color) 0 0) content-box,
+    linear-gradient(var(--white-color) 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.common-learn-btn {
+  max-width: 346px;
+  height: 52px;
+  background-color: #262626;
+  border-radius: 6px;
+}
