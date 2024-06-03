@@ -39,12 +39,15 @@
   border: none;
 }
 
+.left-right-brdr {
+  border-left: 1px solid var(--service-card-brdr);
+  border-right: 1px solid var(--service-card-brdr);
+}
+
 /* ======================================================== SERVICES ======================================================== */
 
 .services-bg {
   background-image: url(../images/png/services-bg.png);
-  border-left: 1px solid var(--service-card-brdr);
-  border-right: 1px solid var(--service-card-brdr);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -57,31 +60,27 @@
   border-top: 1px solid var(--service-card-brdr);
 }
 
-.service-card1 {
+.service-card1 , .choose-card1 {
   border-left: 1px solid var(--service-card-brdr);
 }
 
-.service-card2 {
+.service-card2 , .choose-card2 {
   border-left: 1px solid var(--service-card-brdr);
   border-right: 1px solid var(--service-card-brdr);
 }
 
-.service-card3 {
+.service-card3 , .choose-card3 {
   border-right: 1px solid var(--service-card-brdr);
 }
 
-.service-common-svg {
+.service-common-svg , .choose-svg-relate-service {
   width: 70px;
   height: 70px;
   border-radius: 8px;
-  background: linear-gradient(
-    229.29deg,
-    rgba(158, 255, 0, 0.2) -68.25%,
-    rgba(158, 255, 0, 0) 32.16%
-  );
+  background: var(--service-common-svg);
 }
 
-.service-common-svg::after {
+.service-common-svg::after , .choose-svg-relate-service::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -89,7 +88,7 @@
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  background: linear-gradient(180deg, #2e2e2e 0%, rgba(46, 46, 46, 0) 100%);
+  background: var(--service-after);
   -webkit-mask: linear-gradient(var(--white-color) 0 0) content-box,
     linear-gradient(var(--white-color) 0 0);
   -webkit-mask-composite: xor;
@@ -100,6 +99,28 @@
 .common-learn-btn {
   max-width: 346px;
   height: 52px;
-  background-color: #262626;
+  background-color: var(--color-26);
   border-radius: 6px;
+}
+
+/* ======================================================== CHOOSE_UP ======================================================= */
+
+.choose-up-bg {
+  background-image: url(../images/png/choose-up-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 280px;
+}
+
+.choose-p {
+  max-width: 779px;
+}
+
+.common-card-choose {
+  padding: 60px;
+}
+
+.choose-card1 , .choose-card2{
+  border-bottom: 1px solid var(--service-card-brdr);
 }
