@@ -82,6 +82,7 @@ h2 {
 
   --color-e6: #e6e6e6;
   --color-26: #262626;
+  --color-d8: #d8ff99;
 
   --bg-1a: #1a1a1a;
 
@@ -260,6 +261,10 @@ h2 {
 
 .bg-1a {
   background-color: var(--bg-1a);
+}
+
+.color-d8 {
+  color: var(--color-d8);
 }
 
 /* ------------------------------------------------------  Define All Media Screens -------------------------------------------------- */

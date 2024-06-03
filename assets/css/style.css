@@ -10,6 +10,10 @@
   margin-top: 14px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .mt-30 {
   margin-top: 30px;
 }
@@ -24,6 +28,14 @@
 
 /* ======================================================== PADDING ========================================================== */
 
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
 .pl-12 {
   padding-left: 12px !important;
 }
@@ -32,7 +44,13 @@
   padding-right: 12px !important;
 }
 
-/* ======================================================== COMMON THINGS =================================================== */
+/* ======================================================== FLEX_CLASSES ======================================================= */
+
+.gap-12 {
+  gap: 12px;
+}
+
+/* ======================================================== COMMON THINGS ====================================================== */
 
 .common-btn {
   outline: none;
@@ -60,27 +78,32 @@
   border-top: 1px solid var(--service-card-brdr);
 }
 
-.service-card1 , .choose-card1 {
+.service-card1,
+.choose-card1 {
   border-left: 1px solid var(--service-card-brdr);
 }
 
-.service-card2 , .choose-card2 {
+.service-card2,
+.choose-card2 {
   border-left: 1px solid var(--service-card-brdr);
   border-right: 1px solid var(--service-card-brdr);
 }
 
-.service-card3 , .choose-card3 {
+.service-card3,
+.choose-card3 {
   border-right: 1px solid var(--service-card-brdr);
 }
 
-.service-common-svg , .choose-svg-relate-service {
+.service-common-svg,
+.choose-svg-relate-service {
   width: 70px;
   height: 70px;
   border-radius: 8px;
   background: var(--service-common-svg);
 }
 
-.service-common-svg::after , .choose-svg-relate-service::after {
+.service-common-svg::after,
+.choose-svg-relate-service::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -121,6 +144,44 @@
   padding: 60px;
 }
 
-.choose-card1 , .choose-card2{
+.choose-card1,
+.choose-card2 {
+  border-bottom: 1px solid var(--service-card-brdr);
+}
+
+/* ======================================================== CLIENT ============================================================ */
+.choose-up-bg {
+  background-image: url(../images/png/client-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 280px;
+}
+
+.common-client-card {
+  padding: 80px 49px;
+}
+
+.client-card-txt-btn {
+  padding: 14px;
+  background: #24242433;
+  border-radius: 6px;
+  border: 1px solid #262626;
+}
+
+.open-web-btn {
+  width: 117px;
+  height: 49px;
+  background: #262626;
+  border-radius: 6px;
+}
+
+.client-card1,
+.client-card2 {
+  border-top: 1px solid var(--service-card-brdr);
+}
+
+.client-card7,
+.client-card8 {
   border-bottom: 1px solid var(--service-card-brdr);
 }
