@@ -22,6 +22,10 @@
   margin-top: 36px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 .mt-84 {
   margin-top: 84px;
 }
@@ -44,6 +48,11 @@
   padding-right: 12px !important;
 }
 
+.px-unset {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* ======================================================== FLEX_CLASSES ======================================================= */
 
 .gap-12 {
@@ -62,6 +71,105 @@
   border-right: 1px solid var(--service-card-brdr);
 }
 
+.border-left {
+  border-left: 1px solid var(--service-card-brdr);
+}
+
+.border-right {
+  border-right: 1px solid var(--service-card-brdr);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ======================================================== HEADER ========================================================== */
+
+.head-bg {
+  background-image: url(../images/png/Header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.nav {
+  left: 0;
+  top: 0;
+  padding: 20px 0px;
+  z-index: 2;
+  border-bottom: 1px solid #262626;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.contact-btn {
+  height: 45px;
+  width: 104px;
+  border-radius: 6px;
+  background-color: #9eff00;
+}
+
+.header-h {
+  max-width: 587px;
+}
+
+.startup-card {
+  padding: 18px 30px;
+  background: #24242433;
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  border: 1px solid #262626;
+}
+
+.startup-card span {
+  padding: 8px 10px;
+  background: #262626;
+  border-radius: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.works-btn {
+  background-color: #24242433;
+  border: 1px solid #333333;
+  backdrop-filter: blur(3px);
+}
+
+/* ======================================================== SLIDER ========================================================== */
+
+.common-slider {
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--common-slider);
+}
+
+.slider-p span {
+  background: var(--slider-p);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slick-slide {
+  margin: 0 58px;
+}
+
+.slick-list {
+  margin: 0 -58px;
+}
+
+.slick-track {
+  display: flex;
+}
+.slick-track .slick-slide {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ======================================================== SERVICES ======================================================== */
 
 .services-bg {
@@ -76,22 +184,6 @@
   padding: 40px;
   border-bottom: 1px solid var(--service-card-brdr);
   border-top: 1px solid var(--service-card-brdr);
-}
-
-.service-card1,
-.choose-card1 {
-  border-left: 1px solid var(--service-card-brdr);
-}
-
-.service-card2,
-.choose-card2 {
-  border-left: 1px solid var(--service-card-brdr);
-  border-right: 1px solid var(--service-card-brdr);
-}
-
-.service-card3,
-.choose-card3 {
-  border-right: 1px solid var(--service-card-brdr);
 }
 
 .service-common-svg,
@@ -141,7 +233,7 @@
 }
 
 .common-card-choose {
-  padding: 60px;
+  padding: 20px;
 }
 
 .choose-card1,
@@ -184,4 +276,155 @@
 .client-card7,
 .client-card8 {
   border-bottom: 1px solid var(--service-card-brdr);
+}
+
+/* ======================================================== MEDIA SCREEN ========================================================== */
+
+@media (min-width: 992px) {
+  .common-card-choose {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  #checkbox {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 10px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+
+  .bars {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #9eff00;
+  }
+
+  #bar2 {
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+  }
+
+  #bar1,
+  #bar3 {
+    width: 70%;
+  }
+
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar2 {
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .navbar-items {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 102vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--black-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    z-index: 1;
+  }
+
+  .show {
+    left: 0;
+  }
+
+  .token-card {
+    max-width: 768px;
+  }
+
+  .sec6-img {
+    max-width: 660px;
+  }
+
+  .sec7-right {
+    opacity: 20%;
+  }
+
+  .timeline-fire {
+    opacity: 43%;
+  }
+}
+
+@media (max-width: 991.1px) {
+  .common-services-card {
+    padding: 20px;
+  }
 }

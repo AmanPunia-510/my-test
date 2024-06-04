@@ -22,360 +22,468 @@
 
 <body class="bg-1a">
 
-    <header></header>
-    <main>
-        <!-- ===================================================== SERVICES ==================================================== -->
-        <section class="section2-services w-100">
-            <div class="my-container">
-                <div class="services-bg w-100 d-flex flex-column justify-content-center left-right-brdr">
-                    <h2 class="services-h ff-barlo fw-600 fs-8xl lh-150 white-color text-center">Our Services</h2>
-                    <p class="services-p ff-barlo fw-400 fs-md lh-150 text-center mt-10 color-e6">Transform your brand
-                        with our innovative digital solutions that captivate and engage your audience.</p>
-                </div>
+    <head class="head">
+        <nav class="nav position-fixed w-100 bg-1a">
+            <div class="main-container">
+                <div class="navbar d-flex align-items-center justify-content-between">
 
-                <div class="row h-100">
-                    <div class="col-4 px-0 start-0 pl-12">
-                        <div class="service-card1 common-services-card bg-1a h-100">
-                            <div
-                                class="service-common-svg d-flex justify-content-center align-items-center position-relative">
-                                <img src="./assets/images/svg/service1.svg" alt="service1">
-                            </div>
-                            <h2 class="service-card-h fw-600 fs-3xl lh-150 white-color ff-barlo mt-30">Design</h2>
-                            <p class="service-card-p fw-400 fs-md lh-150 ff-barlo color-e6 mt-14">At Squareup, our
-                                design team is passionate about creating stunning, user-centric designs that captivate
-                                your audience
-                                and elevate your brand. We believe that great design is not just about aesthetics; it's
-                                about creating seamless and
-                                intuitive user experiences.</p>
-                            <button
-                                class="common-learn-btn learn-btn fw-500 fs-sm lh-150 white-color ff-barlo d-flex justify-content-center align-items-center w-100 common-btn mt-84">Learn
-                                More</button>
-                        </div>
+                    <div class="page-logo">
+                        <img src="./assets/images/svg/Logo.svg" alt="logo-svg">
                     </div>
-                    <div class="col-4 px-0">
-                        <div class="service-card2 common-services-card bg-1a h-100">
-                            <div
-                                class="service-common-svg d-flex justify-content-center align-items-center position-relative">
-                                <img src="./assets/images/svg/service2.svg" alt="service2">
-                            </div>
-                            <h2 class="service-card-h fw-600 fs-3xl lh-150 white-color ff-barlo mt-30">Engineering</h2>
-                            <p class="service-card-p fw-400 fs-md lh-150 ff-barlo color-e6 mt-14">Our engineering team
-                                combines technical expertise with a passion for innovation to build robust and scalable
-                                digital
-                                solutions. We leverage the latest technologies and best practices to deliver
-                                high-performance applications tailored to
-                                your specific needs.</p>
-                            <button
-                                class="common-learn-btn learn-btn fw-500 fs-sm lh-150 white-color ff-barlo d-flex justify-content-center align-items-center w-100 common-btn mt-84">Learn
-                                More</button>
-                        </div>
+
+                    <input type="checkbox" id="checkbox" hidden>
+                    <label for="checkbox" class="toggle d-flex flex-column d-lg-none z-31">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+
+                    <ul class="navbar-items d-flex align-items-center gap-4">
+                        <li class="navlist"><a href="#home" class="ff-barlo fw-500 fs-sm lh-150 color-e6">Home</a></li>
+                        <li class="navlist"><a href="#service"
+                                class="ff-barlo fw-500 fs-sm lh-150 color-e6">Services</a>
+                        </li>
+                        <li class="navlist"><a href="#work" class="ff-barlo fw-500 fs-sm lh-150 color-e6">Work</a></li>
+                        <li class="navlist"><a href="#process" class="ff-barlo fw-500 fs-sm lh-150 color-e6">Process</a>
+                        </li>
+                        <li class="navlist"><a href="#about" class="ff-barlo fw-500 fs-sm lh-150 color-e6">About</a>
+                        </li>
+                        <li class="navlist"><a href="#careers" class="ff-barlo fw-500 fs-sm lh-150 color-e6">Careers</a>
+                        </li>
+                        <button
+                            class="contact-btn common-btn ff-barlo fw-500 fs-sm lh-150 color-26 d-flex d-lg-none justify-content-center align-items-center">Contact
+                            Us</button>
+                    </ul>
+
+                    <button
+                        class="contact-btn common-btn ff-barlo fw-500 fs-sm lh-150 color-26 d-none d-lg-flex justify-content-center align-items-center">Contact
+                        Us</button>
+                </div>
+            </div>
+        </nav>
+    </head>
+
+    <main class="main-container">
+        <!-- ===================================================== HEADER ====================================================== -->
+
+        <header class="min-vh-100 w-100 d-flex flex-column left-right-brdr">
+            <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 head-bg">
+                <h2 class="header-h ff-barlo fw-600 fs-12xl lh-130 white-color text-center">A Digital Product Studio
+                    that will Work</h2>
+                <div class="startup-card ff-barlo fw-400 fs-lg lh-150 color-98 mt-30">For<span
+                        class="white-color">Startups</span>,<span class="white-color">Enterprise
+                        leaders</span>,<span class="white-color">Media & Publishers</span>and<span
+                        class="white-color">Social Good</span></div>
+
+                <div class="two-btns d-flex align-items-center gap-12 mt-40">
+                    <button class="works-btn contact-btn common-btn ff-barlo fw-500 fs-sm lh-150 white-color">Our
+                        Works</button>
+                    <button class="contact-btn common-btn ff-barlo fw-500 fs-sm lh-150 color-26">Contact Us</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===================================================== SLIDER ====================================================== -->
+        <section class="section1 slider-section left-right-brdr">
+            <div class="slider overflow-hidden position-relative z-1">
+
+                <div class="slider-item1 common-slider">
+                    <div class="slider-image">
+                        <img src="./assets/images/png/slider-img1.png" alt="slider image-1" class="slider-img1">
                     </div>
-                    <div class="col-4 px-0 pr-12">
-                        <div class="service-card3 common-services-card bg-1a h-100">
-                            <div
-                                class="service-common-svg d-flex justify-content-center align-items-center position-relative">
-                                <img src="./assets/images/svg/service3.svg" alt="service3">
-                            </div>
-                            <h2 class="service-card-h fw-600 fs-3xl lh-150 white-color ff-barlo mt-30">Project
-                                Management</h2>
-                            <p class="service-card-p fw-400 fs-md lh-150 ff-barlo color-e6 mt-14">Our experienced
-                                project management team ensures that your projects are delivered on time, within budget,
-                                and according
-                                to your specifications. We follow industry-standard methodologies and employ effective
-                                communication and collaboration
-                                tools to keep you informed throughout the development process.</p>
-                            <button
-                                class="common-learn-btn learn-btn fw-500 fs-sm lh-150 white-color ff-barlo d-flex justify-content-center align-items-center w-100 common-btn mt-36">Learn
-                                More</button>
-                        </div>
+                </div>
+                <div class="slider-item1 common-slider">
+                    <div class="slider-image">
+                        <img src="./assets/images/png/slider-img2.png" alt="slider image-1" class="slider-img1">
+                    </div>
+                </div>
+                <div class="slider-item1 common-slider">
+                    <div class="slider-image">
+                        <img src="./assets/images/png/slider-img3.png" alt="slider image-1" class="slider-img1">
+                    </div>
+                </div>
+                <div class="slider-item1 common-slider">
+                    <div class="slider-image">
+                        <img src="./assets/images/png/slider-img4.png" alt="slider image-1" class="slider-img1">
+                    </div>
+                </div>
+                <div class="slider-item1 common-slider">
+                    <div class="slider-image">
+                        <img src="./assets/images/png/slider-img5.png" alt="slider image-1" class="slider-img1">
+                    </div>
+                </div>
+                <div class="slider-item1 common-slider">
+                    <div class="slider-image">
+                        <img src="./assets/images/png/slider-img6.png" alt="slider image-1" class="slider-img1">
+                    </div>
+                </div>
+                <div class="slider-item1 common-slider">
+                    <div class="slider-image">
+                        <img src="./assets/images/png/slider-img1.png" alt="slider image-1" class="slider-img1">
+                    </div>
+                </div>
+                <div class="slider-item1 common-slider">
+                    <div class="slider-image">
+                        <img src="./assets/images/png/slider-img2.png" alt="slider image-1" class="slider-img1">
+                    </div>
+                </div>
+                <div class="slider-item1 common-slider">
+                    <div class="slider-image">
+                        <img src="./assets/images/png/slider-img3.png" alt="slider image-1" class="slider-img1">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===================================================== CHOOSE_UP =================================================== -->
-        <section class="section3-choose w-100">
-            <div class="my-container">
-                <div class="choose-up-bg d-flex flex-column justify-content-center left-right-brdr w-100">
-                    <h2 class="Choose-h ff-barlo fw-600 fs-8xl lh-150 white-color text-center">Why Choose SquareUp?
-                    </h2>
-                    <p class="choose-p mx-auto ff-barlo fw-400 fs-md lh-150 text-center mt-10 color-e6">Experience
-                        excellence
-                        in digital craftsmanship with our team of skilled professionals dedicated to delivering
-                        exceptional results.</p>
+        <!-- ===================================================== SERVICES ==================================================== -->
+        <section class="section2-services w-100 left-right-brdr">
+            <div class="services-bg w-100 d-flex flex-column justify-content-center">
+                <h2 class="services-h ff-barlo fw-600 fs-8xl lh-150 white-color text-center">Our Services</h2>
+                <p class="services-p ff-barlo fw-400 fs-md lh-150 text-center mt-10 color-e6">Transform your brand
+                    with our innovative digital solutions that captivate and engage your audience.</p>
+            </div>
+
+            <div class="row h-100 w-100 mx-auto">
+                <div class="col-12 col-sm-6 col-lg-4 px-0 border-right">
+                    <div class="service-card1 d-flex flex-column justify-content-between common-services-card bg-1a h-100">
+                        <div
+                            class="service-common-svg d-flex justify-content-center align-items-center position-relative mx-auto mx-sm-0">
+                            <img src="./assets/images/svg/service1.svg" alt="service1">
+                        </div>
+                        <h2 class="service-card-h fw-600 fs-3xl lh-150 white-color ff-barlo mt-30 text-center text-sm-start">Design</h2>
+                        <p class="service-card-p fw-400 fs-md lh-150 ff-barlo color-e6 mt-14 text-center text-sm-start">At Squareup, our
+                            design team is passionate about creating stunning, user-centric designs that captivate
+                            your audience
+                            and elevate your brand. We believe that great design is not just about aesthetics; it's
+                            about creating seamless and
+                            intuitive user experiences.</p>
+                        <button
+                            class="common-learn-btn learn-btn fw-500 fs-sm lh-150 white-color ff-barlo d-flex justify-content-center align-items-center w-100 common-btn mt-84 mx-auto mx-sm-0">Learn
+                            More</button>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-6 px-0 pl-12">
-                        <div class="choose-card1 common-card-choose">
-                            <div class="choose-svg-txt d-flex align-items-center gap-3">
-                                <div
-                                    class="choose-svg-relate-service position-relative d-flex align-items-center justify-content-center">
-                                    <img src="./assets/images/svg/expertise.svg" alt="expertise">
-                                </div>
-                                <div class="choose-common-txt ff-barlo fw-500 fs-xl lh-150 white-color">Expertise</div>
-                            </div>
-                            <p class="choose-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-30">Our team consists of
-                                highly skilled professionals who have a deep understanding of the digital landscape. We
-                                stay
-                                updated with the latest industry trends and best practices to deliver cutting-edge
-                                solutions.</p>
+                <div class="col-12 col-sm-6 col-lg-4 px-0 border-right">
+                    <div class="service-card2 d-flex flex-column justify-content-between common-services-card bg-1a h-100">
+                        <div
+                            class="service-common-svg d-flex justify-content-center align-items-center position-relative mx-auto mx-sm-0">
+                            <img src="./assets/images/svg/service2.svg" alt="service2">
                         </div>
+                        <h2 class="service-card-h fw-600 fs-3xl lh-150 white-color ff-barlo mt-30 text-center text-sm-start">Engineering</h2>
+                        <p class="service-card-p fw-400 fs-md lh-150 ff-barlo color-e6 mt-14 text-center text-sm-start">Our engineering team
+                            combines technical expertise with a passion for innovation to build robust and scalable
+                            digital
+                            solutions. We leverage the latest technologies and best practices to deliver
+                            high-performance applications tailored to
+                            your specific needs.</p>
+                        <button
+                            class="common-learn-btn learn-btn fw-500 fs-sm lh-150 white-color ff-barlo d-flex justify-content-center align-items-center w-100 common-btn mt-84 mx-auto mx-sm-0">Learn
+                            More</button>
                     </div>
-
-                    <div class="col-6 px-0 pr-12">
-                        <div class="choose-card2 common-card-choose">
-                            <div class="choose-svg-txt d-flex align-items-center gap-3">
-                                <div
-                                    class="choose-svg-relate-service position-relative d-flex align-items-center justify-content-center">
-                                    <img src="./assets/images/svg/expertise.svg" alt="expertise">
-                                </div>
-                                <div class="choose-common-txt ff-barlo fw-500 fs-xl lh-150 white-color">Expertise</div>
-                            </div>
-                            <p class="choose-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-30">Our team consists of
-                                highly skilled
-                                professionals who have a deep understanding of the digital landscape. We stay
-                                updated with the latest industry trends and best practices to deliver cutting-edge
-                                solutions.</p>
+                </div>
+                <div class="col-12 col-lg-4 px-0 d-flex justify-content-center d-lg-block">
+                    <div class="service-card3 d-flex flex-column justify-content-between common-services-card bg-1a h-100">
+                        <div
+                            class="service-common-svg d-flex justify-content-center align-items-center position-relative mx-auto mx-lg-0">
+                            <img src="./assets/images/svg/service3.svg" alt="service3">
                         </div>
+                        <h2 class="service-card-h fw-600 fs-3xl lh-150 white-color ff-barlo mt-30 text-center text-lg-start">Project
+                            Management</h2>
+                        <p class="service-card-p fw-400 fs-md lh-150 ff-barlo color-e6 mt-14 text-center text-lg-start">Our experienced
+                            project management team ensures that your projects are delivered on time, within budget,
+                            and according
+                            to your specifications. We follow industry-standard methodologies and employ effective
+                            communication and collaboration
+                            tools to keep you informed throughout the development process.</p>
+                        <button
+                            class="common-learn-btn learn-btn fw-500 fs-sm lh-150 white-color ff-barlo d-flex justify-content-center align-items-center w-100 common-btn mt-36 mx-auto mx-lg-0">Learn
+                            More</button>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-6 px-0 pl-12">
-                        <div class="choose-card1 common-card-choose">
-                            <div class="choose-svg-txt d-flex align-items-center gap-3">
-                                <div
-                                    class="choose-svg-relate-service position-relative d-flex align-items-center justify-content-center">
-                                    <img src="./assets/images/svg/expertise.svg" alt="expertise">
-                                </div>
-                                <div class="choose-common-txt ff-barlo fw-500 fs-xl lh-150 white-color">Expertise</div>
+        </section>
+
+        <!-- ===================================================== CHOOSE_UP =================================================== -->
+        <section class="section3-choose w-100 left-right-brdr">
+            <div class="choose-up-bg d-flex flex-column justify-content-center w-100">
+                <h2 class="Choose-h ff-barlo fw-600 fs-8xl lh-150 white-color text-center">Why Choose SquareUp?
+                </h2>
+                <p class="choose-p mx-auto ff-barlo fw-400 fs-md lh-150 text-center mt-10 color-e6">Experience
+                    excellence
+                    in digital craftsmanship with our team of skilled professionals dedicated to delivering
+                    exceptional results.</p>
+            </div>
+            <div class="row w-100 mx-auto">
+                <div class="col-6 px-0 border-right">
+                    <div class="choose-card1 common-card-choose">
+                        <div class="choose-svg-txt d-flex align-items-center gap-3">
+                            <div
+                                class="choose-svg-relate-service position-relative d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/svg/expertise.svg" alt="expertise">
                             </div>
-                            <p class="choose-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-30">Our team consists of
-                                highly skilled
-                                professionals who have a deep understanding of the digital landscape. We stay
-                                updated with the latest industry trends and best practices to deliver cutting-edge
-                                solutions.</p>
+                            <div class="choose-common-txt ff-barlo fw-500 fs-xl lh-150 white-color">Expertise</div>
                         </div>
+                        <p class="choose-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-30">Our team consists of
+                            highly skilled professionals who have a deep understanding of the digital landscape. We
+                            stay
+                            updated with the latest industry trends and best practices to deliver cutting-edge
+                            solutions.</p>
                     </div>
+                </div>
 
-                    <div class="col-6 px-0 pr-12">
-                        <div class="choose-card2 common-card-choose">
-                            <div class="choose-svg-txt d-flex align-items-center gap-3">
-                                <div
-                                    class="choose-svg-relate-service position-relative d-flex align-items-center justify-content-center">
-                                    <img src="./assets/images/svg/expertise.svg" alt="expertise">
-                                </div>
-                                <div class="choose-common-txt ff-barlo fw-500 fs-xl lh-150 white-color">Expertise</div>
+                <div class="col-6 px-0">
+                    <div class="choose-card2 common-card-choose">
+                        <div class="choose-svg-txt d-flex align-items-center gap-3">
+                            <div
+                                class="choose-svg-relate-service position-relative d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/svg/expertise.svg" alt="expertise">
                             </div>
-                            <p class="choose-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-30">Our team consists of
-                                highly skilled
-                                professionals who have a deep understanding of the digital landscape. We stay
-                                updated with the latest industry trends and best practices to deliver cutting-edge
-                                solutions.</p>
+                            <div class="choose-common-txt ff-barlo fw-500 fs-xl lh-150 white-color">Expertise</div>
                         </div>
+                        <p class="choose-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-30">Our team consists of
+                            highly skilled
+                            professionals who have a deep understanding of the digital landscape. We stay
+                            updated with the latest industry trends and best practices to deliver cutting-edge
+                            solutions.</p>
+                    </div>
+                </div>
+
+                <div class="col-6 px-0 border-right">
+                    <div class="choose-card1 common-card-choose">
+                        <div class="choose-svg-txt d-flex align-items-center gap-3">
+                            <div
+                                class="choose-svg-relate-service position-relative d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/svg/expertise.svg" alt="expertise">
+                            </div>
+                            <div class="choose-common-txt ff-barlo fw-500 fs-xl lh-150 white-color">Expertise</div>
+                        </div>
+                        <p class="choose-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-30">Our team consists of
+                            highly skilled
+                            professionals who have a deep understanding of the digital landscape. We stay
+                            updated with the latest industry trends and best practices to deliver cutting-edge
+                            solutions.</p>
+                    </div>
+                </div>
+
+                <div class="col-6 px-0">
+                    <div class="choose-card2 common-card-choose">
+                        <div class="choose-svg-txt d-flex align-items-center gap-3">
+                            <div
+                                class="choose-svg-relate-service position-relative d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/svg/expertise.svg" alt="expertise">
+                            </div>
+                            <div class="choose-common-txt ff-barlo fw-500 fs-xl lh-150 white-color">Expertise</div>
+                        </div>
+                        <p class="choose-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-30">Our team consists of
+                            highly skilled
+                            professionals who have a deep understanding of the digital landscape. We stay
+                            updated with the latest industry trends and best practices to deliver cutting-edge
+                            solutions.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ===================================================== CLIENT_SAY ================================================== -->
-        <section class="section4-client">
-            <div class="my-container">
-                <div class="choose-up-bg d-flex flex-column justify-content-center left-right-brdr w-100">
-                    <h2 class="Choose-h ff-barlo fw-600 fs-8xl lh-150 white-color text-center">What our Clients say
-                        About us
-                    </h2>
-                    <p class="client-p choose-p mx-auto ff-barlo fw-400 fs-md lh-150 text-center mt-10 color-e6">At
-                        SquareUp, we take pride in delivering exceptional digital products and services that drive
-                        success for our clients.
-                        Here's what some of our satisfied clients have to say about their experience working with us</p>
+        <section class="section4-client left-right-brdr">
+            <div class="choose-up-bg d-flex flex-column justify-content-center w-100">
+                <h2 class="Choose-h ff-barlo fw-600 fs-8xl lh-150 white-color text-center">What our Clients say
+                    About us
+                </h2>
+                <p class="client-p choose-p mx-auto ff-barlo fw-400 fs-md lh-150 text-center mt-10 color-e6">At
+                    SquareUp, we take pride in delivering exceptional digital products and services that drive
+                    success for our clients.
+                    Here's what some of our satisfied clients have to say about their experience working with us</p>
+            </div>
+            <div class="row w-100 mx-auto">
+                <div class="col-6 px-0 border-right">
+                    <div class="client-card1 choose-card1 common-client-card bg-1a">
+                        <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
+                            Instrumental in Transforming our Online Presence.</h2>
+                        <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
+                            in web development and design resulted in a
+                            visually stunning and user-friendly e-commerce
+                            platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
+                        <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
+                            <div class="client-img-txt d-flex align-items-center gap-12">
+                                <img src="./assets/images/png/client-card1.png" alt="client-card1">
+                                <div>
+                                    <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
+                                    <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
+                                </div>
+                            </div>
+                            <div class="client-btn">
+                                <button
+                                    class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
+                                    Website</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-6 pr-0">
-                        <div class="client-card1 choose-card1 common-client-card bg-1a">
-                            <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
-                                Instrumental in Transforming our Online Presence.</h2>
-                            <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
-                                in web development and design resulted in a
-                                visually stunning and user-friendly e-commerce
-                                platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
-                            <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
-                                <div class="client-img-txt d-flex align-items-center gap-12">
-                                    <img src="./assets/images/png/client-card1.png" alt="client-card1">
-                                    <div>
-                                        <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
-                                        <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
-                                    </div>
+                <div class="col-6 px-0">
+                    <div class="client-card2 choose-card2 common-client-card bg-1a">
+                        <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
+                            Instrumental in Transforming our Online Presence.</h2>
+                        <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
+                            in web development and design resulted in a
+                            visually stunning and user-friendly e-commerce
+                            platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
+                        <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
+                            <div class="client-img-txt d-flex align-items-center gap-12">
+                                <img src="./assets/images/png/client-card1.png" alt="client-card1">
+                                <div>
+                                    <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
+                                    <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
                                 </div>
-                                <div class="client-btn">
-                                    <button class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open Website</button>
-                                </div>
+                            </div>
+                            <div class="client-btn">
+                                <button
+                                    class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
+                                    Website</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 pl-0">
-                        <div class="client-card2 choose-card2 common-client-card bg-1a">
-                            <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
-                                Instrumental in Transforming our Online Presence.</h2>
-                            <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
-                                in web development and design resulted in a
-                                visually stunning and user-friendly e-commerce
-                                platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
-                            <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
-                                <div class="client-img-txt d-flex align-items-center gap-12">
-                                    <img src="./assets/images/png/client-card1.png" alt="client-card1">
-                                    <div>
-                                        <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
-                                        <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
-                                    </div>
+                </div>
+                <div class="col-6 px-0 border-right">
+                    <div class="client-card3 choose-card1 common-client-card bg-1a">
+                        <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
+                            Instrumental in Transforming our Online Presence.</h2>
+                        <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
+                            in web development and design resulted in a
+                            visually stunning and user-friendly e-commerce
+                            platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
+                        <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
+                            <div class="client-img-txt d-flex align-items-center gap-12">
+                                <img src="./assets/images/png/client-card1.png" alt="client-card1">
+                                <div>
+                                    <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
+                                    <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
                                 </div>
-                                <div class="client-btn">
-                                    <button
-                                        class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
-                                        Website</button>
-                                </div>
+                            </div>
+                            <div class="client-btn">
+                                <button
+                                    class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
+                                    Website</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 pr-0">
-                        <div class="client-card3 choose-card1 common-client-card bg-1a">
-                            <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
-                                Instrumental in Transforming our Online Presence.</h2>
-                            <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
-                                in web development and design resulted in a
-                                visually stunning and user-friendly e-commerce
-                                platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
-                            <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
-                                <div class="client-img-txt d-flex align-items-center gap-12">
-                                    <img src="./assets/images/png/client-card1.png" alt="client-card1">
-                                    <div>
-                                        <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
-                                        <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
-                                    </div>
+                </div>
+                <div class="col-6 px-0">
+                    <div class="client-card4 choose-card2 common-client-card bg-1a">
+                        <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
+                            Instrumental in Transforming our Online Presence.</h2>
+                        <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
+                            in web development and design resulted in a
+                            visually stunning and user-friendly e-commerce
+                            platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
+                        <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
+                            <div class="client-img-txt d-flex align-items-center gap-12">
+                                <img src="./assets/images/png/client-card1.png" alt="client-card1">
+                                <div>
+                                    <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
+                                    <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
                                 </div>
-                                <div class="client-btn">
-                                    <button
-                                        class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
-                                        Website</button>
-                                </div>
+                            </div>
+                            <div class="client-btn">
+                                <button
+                                    class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
+                                    Website</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 pl-0">
-                        <div class="client-card4 choose-card2 common-client-card bg-1a">
-                            <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
-                                Instrumental in Transforming our Online Presence.</h2>
-                            <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
-                                in web development and design resulted in a
-                                visually stunning and user-friendly e-commerce
-                                platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
-                            <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
-                                <div class="client-img-txt d-flex align-items-center gap-12">
-                                    <img src="./assets/images/png/client-card1.png" alt="client-card1">
-                                    <div>
-                                        <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
-                                        <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
-                                    </div>
+                </div>
+                <div class="col-6 px-0 border-right">
+                    <div class="client-card5 choose-card1 common-client-card bg-1a">
+                        <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
+                            Instrumental in Transforming our Online Presence.</h2>
+                        <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
+                            in web development and design resulted in a
+                            visually stunning and user-friendly e-commerce
+                            platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
+                        <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
+                            <div class="client-img-txt d-flex align-items-center gap-12">
+                                <img src="./assets/images/png/client-card1.png" alt="client-card1">
+                                <div>
+                                    <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
+                                    <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
                                 </div>
-                                <div class="client-btn">
-                                    <button
-                                        class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
-                                        Website</button>
-                                </div>
+                            </div>
+                            <div class="client-btn">
+                                <button
+                                    class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
+                                    Website</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 pr-0">
-                        <div class="client-card5 choose-card1 common-client-card bg-1a">
-                            <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
-                                Instrumental in Transforming our Online Presence.</h2>
-                            <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
-                                in web development and design resulted in a
-                                visually stunning and user-friendly e-commerce
-                                platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
-                            <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
-                                <div class="client-img-txt d-flex align-items-center gap-12">
-                                    <img src="./assets/images/png/client-card1.png" alt="client-card1">
-                                    <div>
-                                        <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
-                                        <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
-                                    </div>
+                </div>
+                <div class="col-6 px-0">
+                    <div class="client-card6 choose-card2 common-client-card bg-1a">
+                        <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
+                            Instrumental in Transforming our Online Presence.</h2>
+                        <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
+                            in web development and design resulted in a
+                            visually stunning and user-friendly e-commerce
+                            platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
+                        <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
+                            <div class="client-img-txt d-flex align-items-center gap-12">
+                                <img src="./assets/images/png/client-card1.png" alt="client-card1">
+                                <div>
+                                    <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
+                                    <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
                                 </div>
-                                <div class="client-btn">
-                                    <button
-                                        class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
-                                        Website</button>
-                                </div>
+                            </div>
+                            <div class="client-btn">
+                                <button
+                                    class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
+                                    Website</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 pl-0">
-                        <div class="client-card6 choose-card2 common-client-card bg-1a">
-                            <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
-                                Instrumental in Transforming our Online Presence.</h2>
-                            <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
-                                in web development and design resulted in a
-                                visually stunning and user-friendly e-commerce
-                                platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
-                            <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
-                                <div class="client-img-txt d-flex align-items-center gap-12">
-                                    <img src="./assets/images/png/client-card1.png" alt="client-card1">
-                                    <div>
-                                        <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
-                                        <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
-                                    </div>
+                </div>
+                <div class="col-6 px-0 border-right">
+                    <div class="client-card7 choose-card1 common-client-card bg-1a">
+                        <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
+                            Instrumental in Transforming our Online Presence.</h2>
+                        <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
+                            in web development and design resulted in a
+                            visually stunning and user-friendly e-commerce
+                            platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
+                        <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
+                            <div class="client-img-txt d-flex align-items-center gap-12">
+                                <img src="./assets/images/png/client-card1.png" alt="client-card1">
+                                <div>
+                                    <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
+                                    <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
                                 </div>
-                                <div class="client-btn">
-                                    <button
-                                        class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
-                                        Website</button>
-                                </div>
+                            </div>
+                            <div class="client-btn">
+                                <button
+                                    class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
+                                    Website</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 pr-0">
-                        <div class="client-card7 choose-card1 common-client-card bg-1a">
-                            <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
-                                Instrumental in Transforming our Online Presence.</h2>
-                            <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
-                                in web development and design resulted in a
-                                visually stunning and user-friendly e-commerce
-                                platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
-                            <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
-                                <div class="client-img-txt d-flex align-items-center gap-12">
-                                    <img src="./assets/images/png/client-card1.png" alt="client-card1">
-                                    <div>
-                                        <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
-                                        <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
-                                    </div>
-                                </div>
-                                <div class="client-btn">
-                                    <button
-                                        class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
-                                        Website</button>
+                </div>
+                <div class="col-6 px-0">
+                    <div class="client-card8 choose-card2 common-client-card bg-1a">
+                        <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
+                            Instrumental in Transforming our Online Presence.</h2>
+                        <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
+                            in web development and design resulted in a
+                            visually stunning and user-friendly e-commerce
+                            platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
+                        <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
+                            <div class="client-img-txt d-flex align-items-center gap-12">
+                                <img src="./assets/images/png/client-card1.png" alt="client-card1">
+                                <div>
+                                    <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
+                                    <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-6 pl-0">
-                        <div class="client-card8 choose-card2 common-client-card bg-1a">
-                            <h2 class="client-card-h fw-500 fs-xl lh-150 ff-barlo color-d8">SquareUp has been
-                                Instrumental in Transforming our Online Presence.</h2>
-                            <p class="client-card-p fw-400 fs-md lh-150 color-e6 ff-barlo mt-20">Their team's expertise
-                                in web development and design resulted in a
-                                visually stunning and user-friendly e-commerce
-                                platform. Our online sales have skyrocketed, and we couldn't be happier.</p>
-                            <div class="client-card-txt-btn d-flex align-items-center justify-content-between mt-30">
-                                <div class="client-img-txt d-flex align-items-center gap-12">
-                                    <img src="./assets/images/png/client-card1.png" alt="client-card1">
-                                    <div>
-                                        <div class="fw-500 fs-md lh-150 ff-barlo white-color">John Smith</div>
-                                        <div class="fw-400 fs-md lh-150 ff-barlo color-e6">CEO of Chic Boutique</div>
-                                    </div>
-                                </div>
-                                <div class="client-btn">
-                                    <button
-                                        class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
-                                        Website</button>
-                                </div>
+                            <div class="client-btn">
+                                <button
+                                    class="open-web-btn common-btn common-wb-btn ff-barlo fw-500 fs-sm lh-150 white-color d-flex align-items-center justify-content-center">Open
+                                    Website</button>
                             </div>
                         </div>
                     </div>
