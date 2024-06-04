@@ -26,8 +26,12 @@
   margin-top: 40px;
 }
 
-.mt-84 {
-  margin-top: 84px;
+.mt-60 {
+  margin-top: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
 }
 
 /* ======================================================== PADDING ========================================================== */
@@ -53,10 +57,26 @@
   padding-right: 0;
 }
 
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pt-86 {
+  padding-top: 86px;
+}
+
 /* ======================================================== FLEX_CLASSES ======================================================= */
 
 .gap-12 {
   gap: 12px;
+}
+
+.gap-30 {
+  gap: 30px;
 }
 
 /* ======================================================== COMMON THINGS ====================================================== */
@@ -77,6 +97,15 @@
 
 .border-right {
   border-right: 1px solid var(--service-card-brdr);
+}
+
+.border-top-26 {
+  border-top: 1px solid var(--service-card-brdr);
+}
+
+.by-brdr {
+  border-top: 1px solid var(--service-card-brdr);
+  border-bottom: 1px solid var(--service-card-brdr);
 }
 
 ::-webkit-scrollbar {
@@ -115,12 +144,18 @@
   max-width: 587px;
 }
 
+.main-startup {
+  width: 100%;
+  overflow-x: scroll;
+}
+
 .startup-card {
   padding: 18px 30px;
   background: #24242433;
   backdrop-filter: blur(6px);
   border-radius: 8px;
   border: 1px solid #262626;
+  width: 704px;
 }
 
 .startup-card span {
@@ -251,7 +286,7 @@
 }
 
 .common-client-card {
-  padding: 80px 49px;
+  padding: 40px 24px;
 }
 
 .client-card-txt-btn {
@@ -278,11 +313,125 @@
   border-bottom: 1px solid var(--service-card-brdr);
 }
 
+/* ======================================================== ACCORDIAN ============================================================ */
+
+.acc-numb {
+  padding: 16px;
+  position: relative;
+  border-radius: 8px;
+  background: var(--service-common-svg);
+}
+
+.acc-numb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: var(--service-after);
+  -webkit-mask: linear-gradient(var(--white-color) 0 0) content-box,
+    linear-gradient(var(--white-color) 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.accordian-txt {
+  padding: 24px 40px;
+}
+
+.accordian-box {
+  border-bottom: 1px solid #262626;
+}
+
+.thanks-up-bg {
+  background-image: url("../images/png/section5.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 483px;
+}
+
+/* ======================================================== THANKS ========================================================== */
+
+.start-btn {
+  width: 127px;
+  height: 49px;
+  border-radius: 6px;
+  background-color: #9eff00;
+}
+
+.green-box {
+  width: 60.28px;
+  height: 60px;
+  background: #9eff00;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 6px #ffffff80 inset;
+}
+
+/* ======================================================== INFORMATION ========================================================= */
+
+.email-card {
+  max-width: 846px;
+  padding: 60px;
+  padding-bottom: 30px;
+}
+
+.contact-card {
+  max-width: 846px;
+}
+
+.common-name-box {
+  width: 100%;
+  height: 113px;
+  padding: 20px 30px 20px 30px;
+  background: #24242480;
+  border-radius: 6px;
+  border: 1px solid #262626;
+}
+
+.common-name {
+  color: #656567;
+  padding-bottom: 6px;
+  border: none;
+  border-bottom: 1px solid #262626;
+  background-color: transparent;
+  outline: none;
+}
+
+.contact-box {
+  width: 726px;
+  padding: 30px;
+  padding: 20px 30px 20px 30px;
+  background: #24242480;
+  border-radius: 6px;
+  border: 1px solid #262626;
+}
+
 /* ======================================================== MEDIA SCREEN ========================================================== */
 
 @media (min-width: 992px) {
   .common-card-choose {
     padding: 60px;
+  }
+
+  .common-client-card {
+    padding: 80px 49px;
+  }
+
+  .mt-lg-84 {
+    margin-top: 84px;
+  }
+
+  .py-lg-30 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .common-name-box {
+    width: 348px;
   }
 }
 
@@ -421,10 +570,50 @@
   .timeline-fire {
     opacity: 43%;
   }
+
+  .email-card,
+  .contact-card {
+    border: none;
+    width: 100%;
+  }
+
+  .contact-box {
+    width: auto;
+  }
+
+  .email-card {
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .email-pb {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 991.1px) {
   .common-services-card {
     padding: 20px;
+  }
+
+  .section6 {
+    padding: 0px 12px;
+  }
+}
+
+@media (max-width: 767.1px) {
+  .header {
+    min-height: 77vh !important;
+  }
+
+  .startup-card {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 575.11px) {
+  .accordian-txt {
+    padding: 18px 12px;
+    gap: 12px !important;
   }
 }
